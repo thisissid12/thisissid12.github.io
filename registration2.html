@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>Registration | JUETMUN 2017</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./style1.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./main.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" /> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<link rel="shortcut icon" href="/2017/static/pcradmin/images/Oasis-Logo.png">
+	<!-- Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <!----------------->
+
+  <!--icons i.e. font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <!----------->
+
+  <!-- Scripts -->
+  <script src="typewriter.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body id="Home" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!-- Navbar -->
+
+	<div class="container-fluid ">
+	<nav class="menu_options">
+      
+		<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#Home">#JUETMUNguna</a>
+    </div>
+    <div class="collapse navbar-collapse" id="Navbar">
+      <ul class="nav navbar-nav navbar-right">
+       <li><a href="./index.html">Back to Home</a></li>
+</ul>
+</div>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+    <form class="form" id="register-form" acion="/2017/register/" method = "POST">
+			<input type='hidden' name='csrfmiddlewaretoken' value='KNCfEXXVW0YzX2KIJDKoej3wMMlrQSgF86Cu3Hb502q1s8DuLFjaczMPm10YR4Km' />
+
+  		<div class="field">
+    		<label>1. What is your Name: </label>
+    		<p>(As to be printed on Reward/Certificate)</p>
+        <div class="input">
+    			<input type="text" name="name" tabindex="1" />
+  			</div>
+  		</div>
+  		<div class="field">
+    		<label>2. What is your gender?</label>
+    		<div class="radio-input">
+    			 <input type="radio" name="gender" value="M" checked id="male" > <label for="male" tabindex="2">Male</label>
+  				 <input type="radio" name="gender" value="F" id="female"> <label for="female" tabindex="3">Female</label>
+    		</div>
+  		</div>
+
+  		<div class="field">
+    		<label>3. What city do you call home?</label>
+    		<div class="input">
+    			<input type="text" name="city" tabindex="4"/>
+    		</div>
+  		</div>
+
+  		<div class="field">
+    		<label>4. Where can we contact you?</label>
+        <p style="display:inline">+91-</p>
+    		<div class="input">
+    		<input type="text" type="number" name="phone" max="9999999999" min="100000000" tabindex="5"/>
+    		</div>
+  		</div>
+
+  		<div class="field">
+    		<label>5. What is your Email ID? </label>
+    		<div class="input" >
+    			<input type="text" name="email" tabindex="6"/>
+  			</div>	
+  		</div>
+  		<div class="field">
+    		<label>6. What is Your School Name ? </label>
+    		<div class="input" >
+    			<input type="text" name="Enrollment" tabindex="6"/>
+  			</div>	
+  		</div>
+  		<div class="field">
+    		<label>6. What is Your Class ? </label>
+    		<div class="input" >
+    			<input type="text" name="class" tabindex="6"/>
+  			</div>	
+  		</div>
+  		<div class="field">
+    		<label>8. What Country do you want to register for? </label>
+    		<div class="input">
+    			<select name="college" id="Country" tabindex="7" >
+						
+							<option value="Aligarh Muslim University (AMU)">Aligarh Muslim University (AMU)</option>
+						
+							<option value="Ambedkar University">Ambedkar University</option>
+						
+							<option value="Amity Business School">Amity Business School</option>
+						
+							<option value="Amity Institute Of Nanotechnology">Amity Institute Of Nanotechnology</option>
+						
+							<option value="Amity Law School, Delhi">Amity Law School, Delhi</option>
+						
+							<option value="Amity Law School, IP">Amity Law School, IP</option>
+						
+							<option value="Amity Law School-2, Amity University Noida">Amity Law School-2, Amity University Noida</option>
+						
+							<option value="Amity law school-II">Amity law school-II</option>
+						
+							<option value="Amity School of Communication">Amity School of Communication</option>
+						
+							<option value="Amity School of Fashion Technology">Amity School of Fashion Technology</option>
+						
+							<option value="Amity university noida ">Amity university noida </option>
+						
+							<option value="AMITY UNIVERSITY RAJASTHAN">AMITY UNIVERSITY RAJASTHAN</option>
+						
+							<option value="Ansal Institute of Technology (AIT)">Ansal Institute of Technology (AIT)</option>
+						
+							<option value="Aryabhatta College, Delhi University">Aryabhatta College, Delhi University</option>
+						
+							<option value="Ashoka University">Ashoka University</option>
+						
+							<option value="Atma Ram Sanatan Dharma College (ARSD)">Atma Ram Sanatan Dharma College (ARSD)</option>
+						
+							<option value="B.K.Birla Institute of Engg.&amp; Technology">B.K.Birla Institute of Engg.&amp; Technology</option>
+						
+							<option value="B.R. Ambedkar college">B.R. Ambedkar college</option>
+						
+							<option value="Bareilly College">Bareilly College</option>
+						
+							<option value="Bhagwan Parshuram Institute of Technology">Bhagwan Parshuram Institute of Technology</option>
+						
+							<option value="Bharati Vidyapeeth College of Engineering">Bharati Vidyapeeth College of Engineering</option>
+						
+							<option value="Bharti College">Bharti College</option>
+						
+							<option value="Birla Institute of Technology &amp; Science, Pilani">Birla Institute of Technology &amp; Science, Pilani</option>
+						
+							<option value="BML Munjal University">BML Munjal University</option>
+						
+							<option value="Chitkara Univ">Chitkara Univ</option>
+						
+							<option value="Christ Church College ,Kanpur">Christ Church College ,Kanpur</option>
+						
+							<option value="Christ University">Christ University</option>
+						
+							<option value="College of Art, Delhi">College of Art, Delhi</option>
+						
+							<option value="College of Vocational Studies">College of Vocational Studies</option>
+						
+							<option value="Daulat Ram College ">Daulat Ram College </option>
+						
+							<option value="Dayalbagh Educational Institute">Dayalbagh Educational Institute</option>
+						
+							<option value="Deen Dayal Upadhyaya College (DDUC)">Deen Dayal Upadhyaya College (DDUC)</option>
+						
+							<option value="Delhi College of Arts &amp; Commerce">Delhi College of Arts &amp; Commerce</option>
+						
+							<option value="Delhi College Of Engineering">Delhi College Of Engineering</option>
+						
+							<option value="Delhi Technological University">Delhi Technological University</option>
+						
+							<option value="Delhi University">Delhi University</option>
+						
+							<option value="Deshbandhu College,University of Delhi">Deshbandhu College,University of Delhi</option>
+						
+							<option value="Devi Ahilya Vishvavidyalaya">Devi Ahilya Vishvavidyalaya</option>
+						
+							<option value="Dhwani">Dhwani</option>
+						
+							<option value="Dr. Ram Manohar Lohia National Law University,Lucknow">Dr. Ram Manohar Lohia National Law University,Lucknow</option>
+						
+							<option value="Dronacharya College of Enginnering">Dronacharya College of Enginnering</option>
+						
+							<option value="Dyal Singh College (Morning)">Dyal Singh College (Morning)</option>
+						
+							<option value="Dyal Singh Evening College">Dyal Singh Evening College</option>
+						
+							<option value="fairfield institute of management and technology">fairfield institute of management and technology</option>
+						
+							<option value="FRI University, Dehradun ">FRI University, Dehradun </option>
+						
+							<option value="Galgotia&#39;s college Of Engineering And Technology">Galgotia&#39;s college Of Engineering And Technology</option>
+						
+							<option value="Gargi College">Gargi College</option>
+						
+							<option value="Gautam Buddha University (GBU)">Gautam Buddha University (GBU)</option>
+						
+							<option value="Government Engineering College">Government Engineering College</option>
+						
+							<option value="Government Engineering College Bikaner">Government Engineering College Bikaner</option>
+						
+							<option value="Greater Noida Institute Of Technology">Greater Noida Institute Of Technology</option>
+						
+							<option value="Guests">Guests</option>
+						
+							<option value="Guru Gobind Singh Indraprastha University New Delhi">Guru Gobind Singh Indraprastha University New Delhi</option>
+						
+							<option value="Guru Jambheshwar University of Science &amp; Technology (GJUST)">Guru Jambheshwar University of Science &amp; Technology (GJUST)</option>
+						
+							<option value="Guru Nanak Dev University">Guru Nanak Dev University</option>
+						
+							<option value="Guru Tegh Bahadur Institute of Technology">Guru Tegh Bahadur Institute of Technology</option>
+						
+							<option value="Hansraj College">Hansraj College</option>
+						
+							<option value="Hindu">Hindu</option>
+						
+							<option value="Hindustan College of Science and Technology">Hindustan College of Science and Technology</option>
+						
+							<option value="ICFAI Business School (IBS)">ICFAI Business School (IBS)</option>
+						
+							<option value="IILM Greater Noida">IILM Greater Noida</option>
+						
+							<option value="IILM-CET-AHL">IILM-CET-AHL</option>
+						
+							<option value="Indian Institute of Technology (IIT BHU), Varanasi">Indian Institute of Technology (IIT BHU), Varanasi</option>
+						
+							<option value="Indian Institute of Technology (IIT), Delhi">Indian Institute of Technology (IIT), Delhi</option>
+						
+							<option value="Indian Institute of Technology (IIT), Gandhinagar">Indian Institute of Technology (IIT), Gandhinagar</option>
+						
+							<option value="Indian Institute Of Technology, Mumbai">Indian Institute Of Technology, Mumbai</option>
+						
+							<option value="Indian Institute of Technology, Roorkee, ">Indian Institute of Technology, Roorkee, </option>
+						
+							<option value="Indian Maritime university ">Indian Maritime university </option>
+						
+							<option value="Indira Gandhi Delhi Technical University for Women">Indira Gandhi Delhi Technical University for Women</option>
+						
+							<option value="Indore Institute of Science &amp; Technology">Indore Institute of Science &amp; Technology</option>
+						
+							<option value="Indraprastha College for Women, DU">Indraprastha College for Women, DU</option>
+						
+							<option value="institute of advance research">institute of advance research</option>
+						
+							<option value="Institute Of Home Economics (Delhi University) , Hauz Khas">Institute Of Home Economics (Delhi University) , Hauz Khas</option>
+						
+							<option value="Institute of Management Studies (IMS), Dehradun">Institute of Management Studies (IMS), Dehradun</option>
+						
+							<option value="International College For Girls(ICG- The IIS University)">International College For Girls(ICG- The IIS University)</option>
+						
+							<option value="International institute of fashion designing ">International institute of fashion designing </option>
+						
+							<option value="Jagadguru Sri Shivarathreeshwara (JSS) Academy of Technical Education">Jagadguru Sri Shivarathreeshwara (JSS) Academy of Technical Education</option>
+						
+							<option value="Jai Hind College">Jai Hind College</option>
+						
+							<option value="Jaipur National University">Jaipur National University</option>
+						
+							<option value="Jamia Millia Islamia">Jamia Millia Islamia</option>
+						
+							<option value="Janki Devi Memorial College">Janki Devi Memorial College</option>
+						
+							<option value="Jaypee University of Engineering &amp; Technology">Jaypee University of Engineering &amp; Technology</option>
+						
+							<option value="JECRC, Jaipur">JECRC, Jaipur</option>
+						
+							<option value="Jesus and Mary College">Jesus and Mary College</option>
+						
+							<option value="Jindal Global Law School">Jindal Global Law School</option>
+						
+							<option value="JNU">JNU</option>
+						
+							<option value="Kamla Nehru College">Kamla Nehru College</option>
+						
+							<option value="Kasturi Ram College Of Higher Education">Kasturi Ram College Of Higher Education</option>
+						
+							<option value="Keshav Mahavidyalaya">Keshav Mahavidyalaya</option>
+						
+							<option value="Kirori Mal">Kirori Mal</option>
+						
+							<option value="Lady Hardinge Medical College (LHMC)">Lady Hardinge Medical College (LHMC)</option>
+						
+							<option value="Lady Irwin College">Lady Irwin College</option>
+						
+							<option value="Lady Sri Ram">Lady Sri Ram</option>
+						
+							<option value="Lakshmibai College, Delhi University">Lakshmibai College, Delhi University</option>
+						
+							<option value="LNM Institute of Information Technology">LNM Institute of Information Technology</option>
+						
+							<option value="Madhu Bala Institute of Communication and Electronic Media (MBICEM)">Madhu Bala Institute of Communication and Electronic Media (MBICEM)</option>
+						
+							<option value="Maharaja Agrasen Institute Of Management Studies">Maharaja Agrasen Institute Of Management Studies</option>
+						
+							<option value="Maharaja Agrasen Institute Of Technology(MAIT)">Maharaja Agrasen Institute Of Technology(MAIT)</option>
+						
+							<option value="Maharaja Surajmal Institute of Management Studies">Maharaja Surajmal Institute of Management Studies</option>
+						
+							<option value="Maharaja Surajmal Institute of Technology">Maharaja Surajmal Institute of Technology</option>
+						
+							<option value="Maitreyi College">Maitreyi College</option>
+						
+							<option value="Malaviya National Institute of Technology JLN Marg Jaipur">Malaviya National Institute of Technology JLN Marg Jaipur</option>
+						
+							<option value="Manav Rachna College of Engineering (MRCE)">Manav Rachna College of Engineering (MRCE)</option>
+						
+							<option value="Manav Rachna International University (MRIU)">Manav Rachna International University (MRIU)</option>
+						
+							<option value="Manipal University">Manipal University</option>
+						
+							<option value="Manipal university jaipur">Manipal university jaipur</option>
+						
+							<option value="Mata Sundri College">Mata Sundri College</option>
+						
+							<option value="Miranda House">Miranda House</option>
+						
+							<option value="Mody Institute of Technology and Science">Mody Institute of Technology and Science</option>
+						
+							<option value="Motilal Nehru College, Delhi University">Motilal Nehru College, Delhi University</option>
+						
+							<option value="National Academy of Legal Studies and Research (NALSAR)">National Academy of Legal Studies and Research (NALSAR)</option>
+						
+							<option value="National Institute of Construction Management and Research(NICMAR)">National Institute of Construction Management and Research(NICMAR)</option>
+						
+							<option value="National Institute Of Fashion Technology">National Institute Of Fashion Technology</option>
+						
+							<option value="National Institute of Fashion Technology,Kangra">National Institute of Fashion Technology,Kangra</option>
+						
+							<option value="National Institute of Technology Patna">National Institute of Technology Patna</option>
+						
+							<option value="National Institute of Technology, Hamirpur">National Institute of Technology, Hamirpur</option>
+						
+							<option value="National Institute of technology,Warangal">National Institute of technology,Warangal</option>
+						
+							<option value="National Law Institute University">National Law Institute University</option>
+						
+							<option value="Netaji Subhas Institute of Technology (NSIT)">Netaji Subhas Institute of Technology (NSIT)</option>
+						
+							<option value="NIIT University, Neemrana">NIIT University, Neemrana</option>
+						
+							<option value="Northern India Engineering College">Northern India Engineering College</option>
+						
+							<option value="Pannalal Girdharlal Dayanand Anglo Vedic College ">Pannalal Girdharlal Dayanand Anglo Vedic College </option>
+						
+							<option value="Pannalal Girdharlal Dayanand Anglo Vedic College(Evening)">Pannalal Girdharlal Dayanand Anglo Vedic College(Evening)</option>
+						
+							<option value="Pearl Academy of Fashion">Pearl Academy of Fashion</option>
+						
+							<option value="Pearl Academy, Noida">Pearl Academy, Noida</option>
+						
+							<option value="Prabhu Dayal Memorial College of Engineering">Prabhu Dayal Memorial College of Engineering</option>
+						
+							<option value="qwqw">qwqw</option>
+						
+							<option value="Ramjas">Ramjas</option>
+						
+							<option value="Rap Wars">Rap Wars</option>
+						
+							<option value="RVCE">RVCE</option>
+						
+							<option value="Satyawati College">Satyawati College</option>
+						
+							<option value="School of open learning,Delhi University">School of open learning,Delhi University</option>
+						
+							<option value="Shaheed Bhagat Singh College (E/M)">Shaheed Bhagat Singh College (E/M)</option>
+						
+							<option value="Shaheed Sukhdev College of Business Studies">Shaheed Sukhdev College of Business Studies</option>
+						
+							<option value="Shiv Nadar University">Shiv Nadar University</option>
+						
+							<option value="Shivaji College">Shivaji College</option>
+						
+							<option value="Shri Ram College of Commerce (SRCC)">Shri Ram College of Commerce (SRCC)</option>
+						
+							<option value="Shyama Prasad Mukherjee">Shyama Prasad Mukherjee</option>
+						
+							<option value="Shyamlal college evening">Shyamlal college evening</option>
+						
+							<option value="Sikkim Manipal Institute of Medical Sciences">Sikkim Manipal Institute of Medical Sciences</option>
+						
+							<option value="Sikkim University">Sikkim University</option>
+						
+							<option value="Sri Aurobindo College(evening), University of Delhi">Sri Aurobindo College(evening), University of Delhi</option>
+						
+							<option value="Sri Aurobindo College(Morning), University of Delhi">Sri Aurobindo College(Morning), University of Delhi</option>
+						
+							<option value="Sri Guru Gobind Singh College of Commerce">Sri Guru Gobind Singh College of Commerce</option>
+						
+							<option value="Sri Guru Nanak Dev Khalsa College">Sri Guru Nanak Dev Khalsa College</option>
+						
+							<option value="Sri Guru Tegh Bahadur Khalsa College">Sri Guru Tegh Bahadur Khalsa College</option>
+						
+							<option value="Sri Ramaswamy Memorial University">Sri Ramaswamy Memorial University</option>
+						
+							<option value="Sri Ramaswamy Memorial University, NCR CAMPUS">Sri Ramaswamy Memorial University, NCR CAMPUS</option>
+						
+							<option value="Sri Venkateswara College">Sri Venkateswara College</option>
+						
+							<option value="St. Wilfred College">St. Wilfred College</option>
+						
+							<option value="St. Xavier&#39;s College, Jaipur">St. Xavier&#39;s College, Jaipur</option>
+						
+							<option value="Sushant School of Art and Architecture">Sushant School of Art and Architecture</option>
+						
+							<option value="Swami Shraddhahand College">Swami Shraddhahand College</option>
+						
+							<option value="Swami Shraddhanand College, University of Delhi">Swami Shraddhanand College, University of Delhi</option>
+						
+							<option value="Taradevi Harakchand Kankaria Jain College">Taradevi Harakchand Kankaria Jain College</option>
+						
+							<option value="Technological Institute of Textile &amp; Sciences (TIT&amp;S)">Technological Institute of Textile &amp; Sciences (TIT&amp;S)</option>
+						
+							<option value="tg">tg</option>
+						
+							<option value="Thakur college of Engineering and Technology">Thakur college of Engineering and Technology</option>
+						
+							<option value="Thapar University">Thapar University</option>
+						
+							<option value="The Northcap University">The Northcap University</option>
+						
+							<option value="Trident Academy of Technology">Trident Academy of Technology</option>
+						
+							<option value="Trinity Institute of Professional Studies">Trinity Institute of Professional Studies</option>
+						
+							<option value="University Institute of Engineering and Technology">University Institute of Engineering and Technology</option>
+						
+							<option value="University of Petroleum and Energy Studies, Dehradun">University of Petroleum and Energy Studies, Dehradun</option>
+						
+							<option value="University of Rajasthan">University of Rajasthan</option>
+						
+							<option value="Vellore institute Of Technology">Vellore institute Of Technology</option>
+						
+							<option value="Vishwakarma Goverment Engineering College">Vishwakarma Goverment Engineering College</option>
+						
+							<option value="Vivekananda College">Vivekananda College</option>
+						
+							<option value="Vivekananda Institute of Professional Studies">Vivekananda Institute of Professional Studies</option>
+						
+							<option value="Vivekananda Institute of Technology">Vivekananda Institute of Technology</option>
+						
+							<option value="VNRVJIET">VNRVJIET</option>
+						
+							<option value="YMCA University of Science and Technology (YMCAUST)">YMCA University of Science and Technology (YMCAUST)</option>
+						
+							<option value="Zakir Husain Delhi College(Morning)">Zakir Husain Delhi College(Morning)</option>
+						
+					</select>
+  			</div>	
+  		</div>
+
+        <div class="events-box" id="events">
+        </div>
+      </div><!--
+      <div class="field">
+        <div class="g-recaptcha" data-sitekey="6LfMKjIUAAAAAFnFWsHezMISSRZoqmN-spFKJxaz" tabindex="16"></div>
+      </div>-->
+      <div class="submit">
+  		  <input type="button" id="submit-button" name="submit" value="SUBMIT"  tabindex="17">
+      </div>
+</form>
+<footer class="container-fluid text-center">
+<p style="float:center">© 2017 JUETMUN 2017</p>
+
+</footer>
+
+<button id="submit-btn"><img src="./img/submit.svg"></button>
+<button id="next-btn"><img src=".//img/Next_Arrow.svg"></button>
+<button id="back-btn"><img src="./img/Back_Arrow.svg"></button>
+<div id="resp_msg"><p>Thanks!</p></div>
+</div>
+<!--<footer>-->
+
+<!--<footer end>-->
+</body>
+</html>
